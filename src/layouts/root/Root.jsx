@@ -7,7 +7,8 @@ export default function Root() {
   return (
     <div>
           <Navbar></Navbar>
-          <div className="min-h-screen">
+           
+          <div className="min-h-screen max-w-[1300px] mx-auto mb-20">
           <Outlet></Outlet>
           </div>
            <Footer></Footer>

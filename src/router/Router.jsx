@@ -20,7 +20,8 @@ import Home from "../pages/home/Home";
             {
                 path:'/',
                 element:<Home></Home>,
-            }
+                loader:()=>fetch('data.json')
+            },
         ]
      }
   ])
