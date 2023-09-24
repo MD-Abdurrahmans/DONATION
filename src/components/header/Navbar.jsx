@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom"
+import Banner from "./Banner"
 
 
 export default function Navbar() {
@@ -59,7 +60,8 @@ export default function Navbar() {
     </>
 
     return (
-        <div className="navbar bg-base-100">
+      <div>
+           <div className="navbar bg-base-100">
             <div className="navbar">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -83,5 +85,8 @@ export default function Navbar() {
             </div>
            
         </div>
+
+        <Banner></Banner>
+      </div>
     )
 }
