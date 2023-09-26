@@ -7,6 +7,7 @@ import HomePage from "../pages/homePage/HomePage";
 import CardDetails from "../pages/cardDetails/CardDetails";
 import Donation from "../pages/donation/Donation";
 import Statistics from "../pages/statistics/Statistics";
+import ErrorPage from "../pages/errorPage/ErrorPage";
   
 
 
@@ -16,6 +17,7 @@ import Statistics from "../pages/statistics/Statistics";
      {
          path:'/',
          element:<Root></Root>,
+         errorElement:<ErrorPage></ErrorPage>,
          children:[
 
             {

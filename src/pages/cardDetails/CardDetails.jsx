@@ -1,6 +1,6 @@
 import { Link, useLoaderData, useParams } from "react-router-dom"
 
-
+import swal from 'sweetalert';
 
 export default function CardDetails() {
 
@@ -26,20 +26,20 @@ const addedFavorites =[];
         addedFavorites.push(matchInfo);
         localStorage.setItem('favorites',JSON.stringify(addedFavorites))
      
-      alert('no item was new added')
+        swal("Good job!", "Your Item added successfully ", "success");
 
      }else{
 
-     alert('old is there new will be add ') 
 const fav = getItem.find(data=> data.id === id )
 
       if(!fav){
      addedFavorites.push(...getItem,matchInfo)
      localStorage.setItem('favorites',JSON.stringify(addedFavorites))
-         alert('new item added')
+      swal("Great!", "Your Item  successfully added ", "success");
+       
       }else{
 
-         alert('HAS same item')
+        swal("Oops!", "One Time added,Try another item!", "error");
       }
      
         
