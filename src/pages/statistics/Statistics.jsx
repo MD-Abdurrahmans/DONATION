@@ -1,4 +1,4 @@
-import { PieChart } from 'react-minimal-pie-chart';
+
 import { useLoaderData } from 'react-router-dom';
 
 import Chart from 'react-apexcharts';
@@ -37,26 +37,32 @@ console.log('ccc',current)
 
   return (
     
-    <div>
-            <h1>statistics</h1>
+    <div className='max-w-[1300px] mx-auto '>
+           
     
-    <div className='w-[400px]'>
+    <div className='overflow-hidden'>
 
-              <Chart
+ <div className='flex mx-auto  justify-center items-center'>
+  
+ <Chart
+ 
                type='pie'
-               width={1349}
+               width={500}
+               
                height={550}
                series={[donationTotal,donateds, ]}
 
                options={{
-                labels:['Donation','Total','bg'],
+                labels:['Total','Donation','bg'],
                 title:{text:'donation'},
-                noData:{text:'empty data'}
+                noData:{text:'empty data'},
+              
                }}
 
                
               >
                 </Chart> 
+ </div>
 
     </div>
 

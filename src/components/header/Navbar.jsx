@@ -1,11 +1,10 @@
-import { useState } from "react";
+
 import { NavLink } from "react-router-dom";
 // import Banner from "./Banner";
 
 
 
 export default function Navbar() {
-  const [red,setRed] = useState(false)
   const links =<>
   
   <li>  <NavLink to='/'
