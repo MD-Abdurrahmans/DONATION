@@ -2,8 +2,8 @@
 
 export default function Footer() {
   return (
-    <div>
-      <footer className="footer p-10 bg-neutral text-neutral-content">
+    <div className=" bg-neutral">
+      <footer className="footer grid grid-cols-3  place-items-center   p-10 text-neutral-content max-w-[1300px] mx-auto ">
   <nav>
     <header className="footer-title">Services</header> 
     <a className="link link-hover">Branding</a>

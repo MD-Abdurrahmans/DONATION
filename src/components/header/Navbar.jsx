@@ -1,21 +1,41 @@
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 // import Banner from "./Banner";
 
 
-export default function Navbar() {
 
+export default function Navbar() {
+  const [red,setRed] = useState(false)
   const links =<>
   
-  <li>  <NavLink to='/'>Home</NavLink>  </li>
-  <li>  <NavLink to='/donation'>Donation</NavLink>  </li>
-  <li>  <NavLink to='/statistics'>Statistics</NavLink>  </li>
+  <li>  <NavLink to='/'
+    className={({ isActive, isPending }) =>
+    isPending ? "pending" : isActive ? "inactive  text-red-600 " : 
+    "inactive"
+  }
+  
+  >Home</NavLink>  </li>
+  <li>  <NavLink to='/donation' 
+ 
+ className={({ isActive, isPending }) =>
+ isPending ? "pending" : isActive ? "inactive  text-red-600 " : 
+ "inactive"
+}
+ 
+  >Donation</NavLink>  </li>
+  <li>  <NavLink to={`/statistics`}
+    className={({ isActive, isPending }) =>
+    isPending ? "pending" : isActive ? "inactive  text-red-600 " : 
+    "inactive"
+  }
+  >Statistics</NavLink>  </li>
   </>
 
   return (
    <>
-    <div>
-      <div className="navbar bg-base-100">
-  <div className="navbar-start">
+    <div className="">
+      <div className="navbar max-w-[1300px] mx-auto ">
+  <div className="navbar ">
     <div className="dropdown">
       <label tabIndex={0} className="btn btn-ghost lg:hidden">
         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
@@ -37,9 +57,7 @@ export default function Navbar() {
 
     </ul>
   </div>
-  <div className="navbar-end">
-    <a className="btn">Button</a>
-  </div>
+
 </div>
     </div>
   

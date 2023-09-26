@@ -8,7 +8,7 @@ export default function Root() {
     <div>
             <Navbar></Navbar>
             
-          <div className="min-h-screen">
+          <div className="min-h-screen max-w-[1300px] mx-auto mb-[50px]">
             <Outlet></Outlet>
           </div>
              <Footer></Footer>

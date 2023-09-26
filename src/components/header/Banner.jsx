@@ -31,7 +31,7 @@ export default function Banner({setSearch}) {
   
           <div className="form-control left-[30%] w-[40%]   absolute bottom-[30%]  z-40  opacity-100">
         {/* <input type="text" placeholder="Search" className="input input-bordered w-24 md:w-auto" /> */}
-        <div className="flex items-center mt-2">
+        <div className="flex  justify-center items-center mt-2">
    
    <form  onSubmit={handleSearch}  className="flex" >
       
