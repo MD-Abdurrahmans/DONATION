@@ -23,7 +23,8 @@ export default function Banner({setSearch}) {
         
           <div className="bg-white  relative "  >
              
-              <img className="opacity-10 w-full h-[80vh]"  src='/public/Rectangle 4281.png ' alt="" />
+              <img className="opacity-10 w-full h-[80vh]" 
+               src='https://i.ibb.co/Xk7Kj30/Rectangle-4281.png' alt="" />
          
            <h1 className="md:text-4xl lg:text-5xl font-bold left-[23%]  absolute bottom-[50%]  z-40  opacity-100 ">I Grow By Helping People In Need</h1>
           </div>

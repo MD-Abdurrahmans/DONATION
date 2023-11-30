@@ -45,7 +45,7 @@ export default function Navbar() {
     </div>
     <a className=" btn-ghost normal-case text-xl">
       
-       <img className="w-44"  src="/public/Logo.png" alt=""/>
+       <img className="w-44"  src="https://i.ibb.co/M1F9zLJ/Logo.png" alt=""/>
 
     </a>
   </div>
